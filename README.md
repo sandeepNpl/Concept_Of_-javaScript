@@ -1,5 +1,5 @@
 - [DAY-1](#📖-day-1)
-- [DAY-2](#📖-day2)
+- [DAY-2](#📖-day-2)
 
 
 
@@ -19,7 +19,7 @@
      - [CheckingDataTypes](#checking-data-types)
 - [Variables](#variables)
 
-# 📖 Day2
+# 📖 Day 2
   - [Data Types](#data-types)
       - [Primitive Datatypes](#primitive-data-types)
          - [Numbers](#number-data-types)
