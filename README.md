@@ -1,5 +1,9 @@
+- [DAY-1](#📖-day-1)
+- [DAY-2](#📖-day2)
 
-# 📔 Day 1
+
+
+# 📖 Day 1
 
 - [Adding JavaScript to a Web Page](#adding-javascript-to-a-web-page)
     - [Inline Script](#inline-script)
@@ -15,7 +19,17 @@
      - [CheckingDataTypes](#checking-data-types)
 - [Variables](#variables)
 
-  
+# 📖 Day2
+  - [Data Types](#data-types)
+      - [Primitive Datatypes](#primitive-data-types)
+         - [Numbers](#number-data-types)
+         - [Math Object](#math-object)
+
+
+_______________________________________
+
+
+# Day-1
 ## Adding JavaScript to a Web Page
 
 JavaScript can be added to a web page in different ways:
@@ -164,5 +178,91 @@ console.log(firstname,lastname,address,age,country,isMaried)
 
  console.log(age,pi,gravity,speedOfLight)
  ```
+
+ # Day-2
+
+ ## Data Types
+ ____________________
+
+ ### Primitive data types
+   1. Number
+
+   2. string
+
+   3. boolean
+
+   4. undefined
+
+   5. symbol
+
+   Example:
+
+ ```js
+let a = 5;
+let b = 6;
+
+console.log(a==b); //false
+
+let num1 = 10;
+let num2 = 10;
+
+console.log(num1==num2); // true
+
+let js = 'javaScript'
+let rea = 'React'
+
+console.log(js==rea); // false
+
+let lightOn = false;
+let lightOff = false;
+
+console.log(lightOn==lightOff); // true
+```
+### Numbers 
+---------------------------
+#### Number data types  :
+
+```js
+let age = 21
+        const gravity = 9.8 
+        let velocity = 120
+        const PI = 3.14
+        const boilingPoint = 100
+        const bodyTemp = 37
+
+        console.log(age,gravity,velocity,PI,boilingPoint,bodyTemp)
+```
+
+#### Math Object
+---------------------
+```js
+ const PI = Math.PI
+
+        console.log(PI) // 3.1415926535 
+
+        console.log(Math.round(PI)) // 3
+
+        console.log(Math.round(9.81)) // 10
+
+        console.log(Math.floor(PI)) // 3 rounding down
+
+        console.log(Math.ceil(PI)) // 4 rounding up
+
+        console.log(Math.min(2,-1,5,9,0)) // -1
+
+        console.log(Math.max(-4,10,3,5,8)) // 10
+
+        const randNum = Math.random()
+        console.log(randNum)  //0.4787761153770409
+
+
+        const num = Math.floor(Math.random() *11)
+        console.log(num) // 3
+
+```
+
+
+
+    
   
   
