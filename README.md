@@ -23,7 +23,10 @@
   - [Data Types](#data-types)
       - [Primitive Datatypes](#primitive-data-types)
          - [Numbers](#number-data-types)
-         - [Math Object](#math-object)
+           - [Math Object](#math-object)
+           - [Random Number Generator](#random-number-generator)
+        - [Strings](#strings)  
+            - [String Concatenation](#string-concatenation)    
 
 
 _______________________________________
@@ -218,7 +221,7 @@ let lightOff = false;
 
 console.log(lightOn==lightOff); // true
 ```
-### Numbers 
+## Numbers 
 ---------------------------
 #### Number data types  :
 
@@ -252,6 +255,22 @@ let age = 21
 
         console.log(Math.max(-4,10,3,5,8)) // 10
 
+        console.log(Math.abs(-10)) // 10
+
+        console.log(Math.sqrt(25)) // 5
+
+        console.log(Math.pow(3,2)) // 9
+
+        console.log(Math.E); // 2.718281
+
+        let E = 2.718281828459
+
+        console.log(Math.round(E)) // 3
+
+        console.log(Math.log(2)) // 0.6931471
+
+        console.log(Math.log(10)) // 0.74386326
+
         const randNum = Math.random()
         console.log(randNum)  //0.4787761153770409
 
@@ -260,6 +279,53 @@ let age = 21
         console.log(num) // 3
 
 ```
+
+### Random Number Generator :
+
+```js
+let randomNum = Math.random();
+        console.log(randomNum); // 0.1204441221
+
+        let numbetwnZeroAndTen = randomNum*10;
+        console.log(numbetwnZeroAndTen) // 2.1217200;
+
+        let randomNumberRoundToFloor = Math.ceil(numbetwnZeroAndTen);
+        console.log(randomNumberRoundToFloor); // 3
+```
+
+## Strings 
+___________ 
+
+ ```js
+        let MyFirstName = 'Sandeep'
+        let MyLastName = 'Nepali'
+        let MyBirthPlace = 'Nepal'
+        let language = 'JavaScript'
+        let space = ''
+        let quote = 'It is so simple to be happy but so difficult to be simple'
+        let sentenceWithBackTick = `The  shortest distance between two points is straight line`
+        
+        console.log(MyFirstName,MyLastName,MyBirthPlace,language,space,quote,sentenceWithBackTick)
+
+ ```
+
+### String Concatenation
+
+ ```js
+    let MyFirstName = 'Sandeep'
+        let MyLastName = 'Nepali'
+        let MyBirthPlace = 'Nepal'
+        let language = 'JavaScript'
+        let space = '  ';
+
+        let MyFullName =  MyFirstName + space + MyLastName;
+        console.log(MyFullName);
+ ```
+
+
+
+
+ 
 
 
 
