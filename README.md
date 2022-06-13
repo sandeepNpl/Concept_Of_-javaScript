@@ -26,7 +26,12 @@
            - [Math Object](#math-object)
            - [Random Number Generator](#random-number-generator)
         - [Strings](#strings)  
-            - [String Concatenation](#string-concatenation)    
+            - [String Concatenation](#string-concatenation) 
+            - [String concatenation using Addition operator](#string-concatenation-using-additon-operator--it-is-the-old-way-to-concatenate-string-it-is-es5-string-addition) 
+
+            - [Scape Sequence in String](#scape-sequence-in-string)  
+
+            - [Template String](#template-literals-template-strings)
 
 
 _______________________________________
@@ -321,6 +326,84 @@ ___________
         let MyFullName =  MyFirstName + space + MyLastName;
         console.log(MyFullName);
  ```
+#### String Concatenation using additon operator :                 It is the old way to concatenate string. It is ES5 string addition
+ ```js
+
+    let MyFirstName = 'Sandip'
+        let MyLastName = 'Nepali'
+        let MyBirthPlace = 'Nepal'
+        let language = 'JavaScript'
+        let space = '  ';
+
+        let MyFullName =  MyFirstName + space + MyLastName;
+        console.log(MyFullName); // Sandip Nepali
+    </script>
+```
+
+#### Long paragraph in string : We can use backslash character ( \ ) at the end of each line to indicate that the string will continue next line.
+```js
+let  paragraph = " My Name is Sandeep . I live in Kathmandu Nepal.\
+                   I am software engineering student. \
+                   I explore the  HTML,CSS and JavaScript. \
+                   I love exploring and learning new thing.\
+                   In the end of  2021 .\
+                   I was thinking to expand my skill." 
+
+    console.log(paragraph)    
+```
+
+### Scape Sequence in String
+  - new line : \n
+  - Tab : \t 
+  - Back slash : \\
+  - Single quote : (\')
+  - Double quote : (\")
+  
+
+  ### Template Literals (Template Strings)
+
+  - To create template strings, we use two back-ticks.We can inject data as an expressions inside a template.
+
+    ```js 
+    console.log(`The multiple of 4 and 5 is 20`) // The multiple of 4 and 5 is 20
+    let num1 = 4;
+    let num2 = 5;
+    console.log(`The multiple of ${num1} and ${num2} is ${num1*num2}`) // The multiple of 4 and 5 is 20
+    ```
+   
+   Example:
+   ```js 
+
+    let firstName = 'Sandeep'
+    let lastName = 'Nepali'
+    let country = 'Nepal'
+    let language = 'JavaScript'
+    let job = 'Student'
+    let fullName = firstName + ' ' + lastName;
+
+    console.log(`My Name is ${fullName}. I am From ${country}. I am ${job} and I know basics of ${language}.`)
+   ```
+
+   Using String template we can add expressions.
+
+   Example :
+   ```js 
+
+   let a = 3;
+   let b = 4;
+    console.log(`${a} and ${b} are equal :${a==b}`)  // 3 and 4 are equal :false
+    console.log (`${a} is less than ${b}:${a<b}`) // 3  is less than 4  : true
+   ```
+
+ ## String Methods :
+ ____________________________
+   A string is primitive data type 
+
+ 
+
+
+
+ 
 
 
 
