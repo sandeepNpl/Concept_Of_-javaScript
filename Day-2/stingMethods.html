@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Strings Methods</title>
+    <script>
+        //  To calculate the Length of strings. 
+        let intro = 'Software Engineer';
+        console.log(intro.length);
+
+        let firstName = 'Sandip';
+        console.log(firstName.length);
+
+        // Accessing character in the strings 
+
+        let name = 'Sandip';
+        let firstletter = name[0];
+        let secondletter = name[1];
+        let lastletter = name[5];
+        console.log(firstletter);
+        console.log(secondletter);
+        console.log(lastletter);
+
+        // toUpperCase()
+        let upper = 'information'
+        console.log(upper.toUpperCase());
+
+        let string = 'Technology'
+        console.log(string.toUpperCase());
+
+        let country = 'nepal'
+        console.log(country.toUpperCase())
+
+        // toLowerCase()
+
+
+        let string1 = 'I LOVE NEPAL'
+        console.log(string1.toLowerCase());
+
+        // slice string
+
+        let js = 'JavaScript'
+        console.log(js.substr(4,6))
+
+        let myName = 'SandipNepali'
+        console.log(myName.substr(6,6))
+
+        // substring methods 
+
+
+        let string2 = 'Trapped'
+
+        console.log(string2.substring(0,4))
+        console.log(string2.substring(4,7))
+        console.log(string2.substring(4))
+
+        // split()
+
+        let string3 = '30 days of JavaScript'
+
+        console.log(string3.split()) // ['30 days of JavaScript']
+        console.log(string3.split(' ')) //  ['30', 'days', 'of', 'JavaScript']
+        console.log(string3.split(''))  // ['3', '0', ' ', 'd', 'a', 'y', 's', ' ', 'o', 'f', ' ', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+
+        let countries = 'Nepal,India,china,russia' // ['Nepal', 'India', 'china', 'russia']
+        console.log(countries.split(',')) // ['Nepal,India,china,russia']
+        console.log(countries.split(', '))
+
+        // trim
+
+        let string4 = ' I love Nepal '
+        console.log(string4.trim())
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

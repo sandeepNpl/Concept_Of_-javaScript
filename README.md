@@ -394,10 +394,99 @@ let  paragraph = " My Name is Sandeep . I live in Kathmandu Nepal.\
     console.log(`${a} and ${b} are equal :${a==b}`)  // 3 and 4 are equal :false
     console.log (`${a} is less than ${b}:${a<b}`) // 3  is less than 4  : true
    ```
-
  ## String Methods :
  ____________________________
-   A string is primitive data type 
+   A string is primitive data type.
+   The string object has many string methods.
+
+   1. Length : It returns the number of characters in the strings including space.
+
+   ```js
+        //  To calculate the Length of strings. 
+        let intro = 'Software  Engineer';
+        console.log(intro.length); // 17
+
+        let firstName = 'Sandip';
+        console.log(firstName.length); // 6
+   ``` 
+
+   2. Using index we can access the each character of strings. The first index of the string is Zero.
+
+   ```js
+        let name = 'Sandip';
+        let firstletter = name[0]; 
+        let secondletter = name[1]; 
+        let lastletter = name[5];
+        
+         let lastIndex = sting.length - 1
+        console.log(firstletter); // s 
+        console.log(secondletter); // a
+        console.log(lastletter);  // p
+        console.log(string[lastIndex]); // p 
+   ```
+
+   3.  UpperCase() : Used to changes the character of string into Uppercase
+   ```js
+
+   // TO upperCase()
+        let upper = 'information'
+        console.log(upper.toUpperCase()); // INFORMATION
+
+        let string = 'Technology'
+        console.log(string.toUpperCase()); // TECHNOLOGY
+
+        let country = 'nepal'
+        console.log(country.toUpperCase()) // NEPAL
+   ```
+
+   4. toLowerCase() : It used to change the character the of into lower.
+
+   ```js
+    let string1 = 'I LOVE NEPAL'
+    console.log(string1.toLowerCase());
+   ```
+
+   4. substr() : It takes two arguments, the starting index and number of character to slice.
+
+   ```js
+   
+        let js = 'JavaScript'
+        console.log(js.substr(4,6)) // Script
+
+        let myName = 'SandipNepali'
+        console.log(myName.substr(6,6)) // Nepali
+   ```
+   5. substring() : It takes two arguments, the starting index and the stopping index but it doesn't include the character at the stopping index.
+
+    ```js
+    let string2 = 'Trapped';
+
+    console.log(string2.substring(0,4))
+    console.log(string2.substring(4,7))
+    console.log(string2.substring(4))
+
+    ```
+
+    6. split() : The split method splits a string at the specified place.
+ 
+    ```js
+        console.log(string3.split()) // ['30 days of JavaScript']
+        console.log(string3.split(' ')) //  ['30', 'days', 'of', 'JavaScript']
+        console.log(string3.split(''))  // ['3', '0', ' ', 'd', 'a', 'y', 's', ' ', 'o', 'f', ' ', 'J', 'a', 'v', 'a', 'S', 'c', 'r', 'i', 'p', 't']
+
+        let countries = 'Nepal,India,china,russia' // ['Nepal', 'India', 'china', 'russia']
+        console.log(countries.split(',')) // ['Nepal,India,china,russia']
+        console.log(countries.split(', '))
+    ```
+
+    
+
+
+
+
+
+
+
 
  
 
