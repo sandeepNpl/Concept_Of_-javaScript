@@ -1,3 +1,4 @@
+// Level-1 
 // 1
 function fullName(){
     let firstName = 'Sabina'
@@ -41,11 +42,148 @@ console.log(`Area of Rectangle is:`+areaOfRectangle(2, 3))
 
 //  7 
 function areaOfCircle (radius){
-    let areaOC = Math.pi * radius * radius;
+    let areaOC = Math.PI * radius ** 2
     return areaOC ;
+}
+console.log(areaOfCircle(5))
+
+// 8 
+function circumOfCircle(r){
+    let circumference =   Math.PI * 2  * r ;
+    return circumference;
+}
+console.log("The circumference of Circle is"+circumOfCircle(5));
+
+// 9
+
+function calDensity(mass,volume) {
+    let density = (mass/volume )
+    return density;
+
+}
+console.log("The Density of Substances is"+calDensity(20,2));
+
+// 10
+
+function speed(distance,time){
+    return(distance/time)
+}
+console.log(speed(10, 5))
+
+// 11
+
+function weightOfSubstance(mass){
+    return  Math.PI * Math.PI * mass
+} 
+console.log(weightOfSubstance(10))
+
+// 12
+function convertCelsiusToFarenheit(c){
+    let  F = (c*(9/5) + 32);
+    return F;
+}
+console.log(convertCelsiusToFarenheit(37))
+
+
+
+// 13 
+function bmiCal(w, h){
+    let bmi = w/(h*h);
+    return  bmi ;
+}
+
+let result = bmiCal(50, 1.7)
+if(result <18.5){
+    console.log("Underweight")
+}else if(result >= 18.5 && result<24.9){
+    console.log("Normal Weight")
+}else if(result>=25 && result<29.0){
+    console.log("Overweight")
+}else{
+    console.log("obese");
+}
+
+
+
+// 14
+function checkSeason(month){
+    let season
+
+    switch(month){
+        case "december" :
+        case "janauary" :
+        case "february" :
+            season =  "Winter"
+            break;
+
+        case "june" :
+        case "july" :
+        case "August":
+            
+        season = "Summer"
+
+        break;
+
+        case "march" :
+        case "april" :
+        case  "may"  :
+        
+        season = "Spring"
+
+        break;
+
+        case "september":
+        case "october" :
+        case "november":
+        season = "Autumn"
+
+    }
+   return season ;
 
 }
 
-console.log(areaOfCircle(5))
+console.log(checkSeason("july"))
 
 
+// 15
+
+//  Using Math.max
+
+function findLarge(){
+    return Math.max(10, 20, 30, 40, 50, 60);
+}
+console.log(findLarge());
+
+
+// Without Using Math.max f
+function findMax(
+
+){
+    let largeNum = 0;
+    for(const element of arguments){
+        if(largeNum < element){
+            largeNum = element ;
+        }
+    }
+    return largeNum
+}
+
+console.log(findMax(0, 10, 5, 100, 80, 200, 300 ));
+
+
+
+// Level -2 
+
+// 1.
+
+function solveLineEquation(a, b, c){
+
+    
+}
+
+// 2.
+
+function solveQuadEquation(a, b, c){
+    
+
+}
