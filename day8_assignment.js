@@ -38,3 +38,14 @@ console.log(`Area of Rectangle is:`+areaOfRectangle(2, 3))
 
 // 
 
+
+//  7 
+function areaOfCircle (radius){
+    let areaOC = Math.pi * radius * radius;
+    return areaOC ;
+
+}
+
+console.log(areaOfCircle(5))
+
+
