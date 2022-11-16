@@ -183,7 +183,65 @@ function solveLineEquation(a, b, c){
 
 // 2.
 
-function solveQuadEquation(a, b, c){
-    
+function solveQuadratic(a, b, c){
+    discriminant = Math.pow(b, 2) - (4 * a  * c)
 
+    let posVal = (-b+Math.pow(discriminant, (1/2))) /(2*a)
+
+    let negVal = (-b-Math.pow(discriminant, (1/2))) /(2*a)
+
+    return [posVal, negVal]
 }
+console.log(solveQuadratic(1, 4, 4));
+console.log(solveQuadratic(1, 7, 12));
+console.log(solveQuadratic(1, 0, -4));
+console.log(solveQuadratic(1, -1, 0));
+
+// 3. 
+function printArray(){
+    for(let element of arguments){
+        console.log(element);
+    }
+}
+printArray(1, 2, 3)
+
+
+// 4.
+let showDataTime = () =>{
+    let d = new  Date();
+
+    // for date
+    let date = d.getDate();
+    let year = d.getFullYear();
+    let month = d.getMonth();
+
+    // For time
+    let  time = d.getHours();
+    let  minute= d.getMinutes();
+
+    let timeFormat = `${date}/${month}/${year}  ${time}:${minute}`
+
+    return timeFormat;
+}
+
+console.log(showDataTime());
+
+
+// 5.
+
+function  swapValues(x, y){
+    return[y, x]
+}
+
+console.log(swapValues(1,2));
+
+// 6
+
+function reverseArray(){
+    
+}
+
+
+
+
+
