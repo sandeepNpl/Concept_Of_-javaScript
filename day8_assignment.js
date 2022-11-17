@@ -237,11 +237,101 @@ console.log(swapValues(1,2));
 
 // 6
 
-function reverseArray(){
-    
+function reverseArray(array){
+   let reserved = []
+   for(let i = array.length -1 ; i>0 ; i--){
+    reserved.push(i)
+   }
+   return reserved; 
+}
+console.log(reverseArray([ 1, 2, 3, 4, 5, 6]))
+console.log(reverseArray(['A', 'B', 'C', 'D']))
+
+// 7 
+
+let capitalizeArray = (array1)  =>{
+    let capitalized = [];
+    for(let element of array1){
+        capitalized.push(element.toUpperCase())
+    }
+
+    return capitalized;
 }
 
+console.log(capitalizeArray(['a', 'b', 'c', 'd']))
 
+
+// Level -3 
+
+// 1
+
+// let userIdGeneratedByUser = () =>{
+//     let lengthOfId = parseInt(prompt("Enter the Length of ID"));
+//     let noOfId = parseInt(prompt("Enter no of ID"));
+//     let total = 'adcdefghijklmnopqrstuvwxz123456789';
+
+//     let allId = [];
+//     for(let i=1; i<= noOfId; i++){
+//         let randomId =[];
+//         for(let j=1; j<=lengthOfId ; j++){
+//             randomId.push(idContent[Math.floor(Math.random() * total.length) -1])
+//         }
+
+//         allId.push(randomId.join(''));
+//     }
+
+//     return allId;
+    
+// }
+// console.log(userIdGeneratedByUser());
+
+
+// 2
+let  rgbColorGenerator = () => {
+
+    let rgbContent = [];
+    for(let char of '333'){
+        var red = (parseInt(Math.random() * 255))
+        var green = (parseInt(Math.random() * 255))
+        var blue= (parseInt(Math.random() * 255))
+        rgbContent.push(red, green, blue);
+
+    }
+
+    return `rgbConten(${red}, ${green}, ${blue})`
+
+}
+
+console.log(rgbColorGenerator())
+
+
+// 3
+let arrayOfHexaColors = () =>{
+    let hexAllId = '123456789abcdef'
+    let loopCount = parseInt(Math.random()  * 10);
+    let hexCode = [];
+
+    for(let x=1; x<=loopCount; x++){
+
+        hexChars = [];
+        for(let i=1; i<=6; i++ ){
+            hexChars.push(hexAllId[parseInt(Math.random() * hexAllId.length -1)])
+        }
+
+        hexCode.push("#" + hexChars.join(''))
+    }
+
+    return hexCode;
+
+}
+console.log(arrayOfHexaColors());
+
+// 4
+let arrayOfRgbColors = ()  =>{
+    let rgbArray = [];
+    
+
+}
 
 
 
