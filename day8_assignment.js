@@ -330,7 +330,6 @@ console.log(arrayOfHexaColors());
 let arrayOfRgbColors = ()  =>{
     let rgbArray = [];
     
-
 }
 
 
