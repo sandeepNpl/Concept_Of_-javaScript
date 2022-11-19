@@ -126,6 +126,23 @@ let findMernStackDevs = () => {
 const usersCopy = Object.assign({}, users);
 usersCopy['Sandeep'] = {};
 
+// 5
+const keys = Object.keys(users);
+
+// 6 
+const values = Object.values(users);
+
+// 7 
+
+// 7: Countries.js files should be availed 
+const country = countries[Object.keys(countries)[0]];
+   
+   console.log("Name: ", country.name)
+   console.log("Capital: ", country.capital)
+   console.log("Population: ", country.population);
+   console.log("Languages: ", country.languages);
+
+
 
 
 
