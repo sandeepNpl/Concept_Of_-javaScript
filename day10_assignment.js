@@ -100,5 +100,37 @@ for(let user of Object.keys[persons]){
 }
 console.log(loggedInUser.email, highestPointPerson)
 
+// 3
+let findMernStackDevs = () => {
+    let mern = ['MangoDB', 'Express', 'React', 'Node'];
+    let count = 0;
+    let mernStackDevs = [];
+    
+    for(const dev of Object.values(users)) {
+       for(const skill of dev['skills']) {
+          if (mern.indexOf(skill) != -1) 
+             count++;
+       }
+       if(count == 4) 
+          mernStackDevs.push(dev);
+    }
+    return mernStackDevs;
+ }
+ 
+ findMernStackDevs().forEach((el) => {
+    console.log(el); 
+ })
+
+
+// 4 
+const usersCopy = Object.assign({}, users);
+usersCopy['Sandeep'] = {};
+
+
+
+
+
+
+
 
 
