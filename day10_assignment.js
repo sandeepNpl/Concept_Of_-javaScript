@@ -142,6 +142,8 @@ const country = countries[Object.keys(countries)[0]];
    console.log("Population: ", country.population);
    console.log("Languages: ", country.languages);
 
+//    
+
 
 
 
